@@ -6,5 +6,13 @@ module.exports = {
     output:{
         filename:'build.js',
         path:path.resolve(__dirname,'build')
+    },
+    devServer:{
+        contentBase:path.resolve(__dirname,'build'),
+        host:'localhost',
+        port:8080,
+        open:true,
+        compress:true,
+        progress:true 
     }
 }
